@@ -20,10 +20,15 @@ export default {
           light: '#736063',    // Lighter variant
         },
         green: {
-          DEFAULT: '#878846',  // Main brown color
-          dark: '#303529',     // Darker variant
-          light: '#d6c688',    // Lighter variant
+          DEFAULT: '#878846',  
+          dark: '#303529',     
+          light: '#d6c688',    
         },
+        yellow: {
+          DEFAULT: '#ba9e6d',  // Main brown color
+          dark: '#ba9e6d',     // Darker variant
+          light: '#dfd7ac',    // Lighter variant
+        }
         
       },
     },

@@ -9,17 +9,17 @@ const Header: React.FC = () => {
                 <nav className="mt-4">
                     <ul className="flex space-x-4">
                         <li>
-                            <a href="#home" className="text-[#ba9e6d] font-bold  border-2 border-brown-dark bg-brown px-4 py-2 rounded">Home</a>
+                            <a href="" className="text-yellow-dark font-bold  border-2 border-brown-dark bg-brown px-4 py-2 rounded">Home</a>
                         </li>
                         <li>
-                            <a href="#about" className="text-[#ba9e6d] font-bold border-2 border-brown-dark bg-brown px-4 py-2 rounded">About</a>
+                            <a href="/about" className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown px-4 py-2 rounded">About</a>
                         </li>
                         <li>
-                            <a href="#qa" className="text-[#ba9e6d] font-bold border-2 border-brown-dark bg-brown px-4 py-2 rounded">Q&A</a>
+                            <a href="/qa" className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown px-4 py-2 rounded">Q&A</a>
                         </li>
                     
                         <li>
-                            <a href="#rsvp" className="text-[#ba9e6d] font-bold border-2 border-brown-dark bg-brown px-4 py-2 rounded">RSVP</a>
+                            <a href="/rsvp" className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown px-4 py-2 rounded">RSVP</a>
                         </li>
                       </ul>  
                 </nav>
