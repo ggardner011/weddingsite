@@ -23,8 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${raleway.className}  antialiased`}>
         <Header />
-
-        {children}
+        <div className="bg-yellow-light min-h-screen">{children}</div>
       </body>
     </html>
   );

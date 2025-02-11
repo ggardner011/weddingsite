@@ -3,7 +3,7 @@ import SearchBar from "@/components/search";
 
 const Rsvp: React.FC = () => {
   return (
-    <div className="bg-yellow-light min-h-screen">
+    <div>
       <h1 className="text-green-dark text-2xl md:text-4xl  font-bold p-8">
         RSVP Here!
       </h1>
