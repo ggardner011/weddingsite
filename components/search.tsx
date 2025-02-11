@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 const SearchBar: React.FC = () => {
   const [code, setCode] = useState<string>("");
   const router = useRouter();
 
   const handleSearch = () => {
-    const currentPath = router.pathname;
+    const currentPath = usePathname();
     router.push(`${currentPath}?code=${code}`);
   };
 
