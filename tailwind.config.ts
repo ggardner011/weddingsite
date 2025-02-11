@@ -19,6 +19,11 @@ export default {
           dark: '#302021',     // Darker variant
           light: '#736063',    // Lighter variant
         },
+        green: {
+          DEFAULT: '#878846',  // Main brown color
+          dark: '#303529',     // Darker variant
+          light: '#d6c688',    // Lighter variant
+        },
         
       },
     },
