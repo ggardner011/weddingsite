@@ -4,9 +4,9 @@ import { useRouter, usePathname } from "next/navigation";
 const SearchBar: React.FC = () => {
   const [code, setCode] = useState<string>("");
   const router = useRouter();
+  const currentPath = usePathname();
 
   const handleSearch = () => {
-    const currentPath = usePathname();
     router.push(`${currentPath}?code=${code}`);
   };
 
