@@ -11,7 +11,7 @@ const RsvpComponent: React.FC = () => {
 
   const [guests, setGuests] = useState<Guests[]>([]);
   const [error, setError] = useState("");
-  const [waiting, setWaiting] = useState(false);
+  const [waiting, setWaiting] = useState(true);
 
   useEffect(() => {
     setWaiting(true);
