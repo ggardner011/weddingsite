@@ -7,7 +7,7 @@ import { Guests } from "@prisma/client";
 
 const RsvpComponent: React.FC = () => {
   const searchParams = useSearchParams();
-  const code = searchParams.get("code");
+  const code = searchParams.get("code") || ""; //set code to empty string if null
 
   const [guests, setGuests] = useState<Guests[] | null>(null);
   const [error, setError] = useState("");
@@ -29,7 +29,6 @@ const RsvpComponent: React.FC = () => {
           console.error("Error fetching guests:", err);
           setError("Failed to load guests. Please try again.");
         });
-      console.log("code", code);
     }
   }, [code]);
 
@@ -39,8 +38,8 @@ const RsvpComponent: React.FC = () => {
         RSVP Here!
       </h1>
 
-      <SearchBar />
-      {code === null || code === "" ? (
+      <SearchBar intialCode={code} />
+      {code === "" ? (
         <p className="text-brown-dark text-md md:text-text-lg  p-4">
           Please enter your invitation code to RSVP. The code will come printed
           on your invitation.

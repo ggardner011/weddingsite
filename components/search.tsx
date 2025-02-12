@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 
-const SearchBar: React.FC = () => {
-  const [code, setCode] = useState<string>("");
+interface SearchProps {
+  intialCode: string;
+}
+
+const SearchBar: React.FC<SearchProps> = ({ intialCode }) => {
+  const [code, setCode] = useState<string>(intialCode) || "";
   const router = useRouter();
   const currentPath = usePathname();
 
