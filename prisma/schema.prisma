@@ -15,7 +15,7 @@ datasource db {
 
 model Guests {
   id             String   @id @default(uuid())
-  groupcode      String?  // ✅ Optional group code
+  groupcode      String  
   rsvpstatus     String   @default("Pending")  // ✅ Default RSVP status
   firstname      String
   lastname       String
@@ -23,5 +23,7 @@ model Guests {
   foodpreference String?  @default("None") // ✅ Default food preference
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
+
+   @@index([groupcode]) 
 }
 
