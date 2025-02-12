@@ -9,12 +9,12 @@ const RsvpComponent: React.FC = () => {
   const searchParams = useSearchParams();
   const code = searchParams.get("code");
 
-  const [guests, setGuests] = useState<Guests[]>([]);
+  const [guests, setGuests] = useState<Guests[] | null>(null);
   const [error, setError] = useState("");
-  const [waiting, setWaiting] = useState(true);
 
   useEffect(() => {
-    setWaiting(true);
+    setError("");
+    setGuests(null);
     if (code) {
       fetch("/api/getGuestsByGroupcode", {
         method: "POST",
@@ -29,8 +29,8 @@ const RsvpComponent: React.FC = () => {
           console.error("Error fetching guests:", err);
           setError("Failed to load guests. Please try again.");
         });
+      console.log("code", code);
     }
-    setWaiting(false);
   }, [code]);
 
   return (
@@ -40,7 +40,7 @@ const RsvpComponent: React.FC = () => {
       </h1>
 
       <SearchBar />
-      {code === null ? (
+      {code === null || code === "" ? (
         <p className="text-brown-dark text-md md:text-text-lg  p-4">
           Please enter your invitation code to RSVP. The code will come printed
           on your invitation.
@@ -48,18 +48,14 @@ const RsvpComponent: React.FC = () => {
       ) : (
         <>
           {error ? (
-            <p className="text-red-500 text-md md:text-text-lg p-4">
+            <p className="text-red-500 text-md md:text-text-lg  p-4">
               Error: {error}
-            </p>
-          ) : waiting ? (
-            <p className="text-brown-dark text-md md:text-text-lg  p-4">
-              Loading...
-            </p>
-          ) : guests.length === 0 ? (
-            <p className="text-red-500 text-md md:text-text-lg p-4">
+            </p> // ✅ Only show error after loading completes
+          ) : guests !== null && guests.length === 0 ? (
+            <p className="text-red-500 text-md md:text-text-lg  p-4">
               Invitation code not found.
             </p>
-          ) : (
+          ) : guests !== null ? (
             <>
               <RsvpForm guests={guests} />
               <p className="text-brown-dark text-md md:text-text-lg  p-4">
@@ -68,6 +64,10 @@ const RsvpComponent: React.FC = () => {
                 {guests.map((guest) => guest.firstname).join(", ")}{" "}
               </p>
             </>
+          ) : (
+            <p className="text-brown-dark text-md md:text-text-lg  p-4">
+              Loading...
+            </p>
           )}
         </>
       )}
