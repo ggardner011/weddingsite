@@ -11,8 +11,10 @@ const RsvpComponent: React.FC = () => {
 
   const [guests, setGuests] = useState<Guests[]>([]);
   const [error, setError] = useState("");
+  const [waiting, setWaiting] = useState(false);
 
   useEffect(() => {
+    setWaiting(true);
     if (code) {
       fetch("/api/getGuestsByGroupcode", {
         method: "POST",
@@ -28,6 +30,7 @@ const RsvpComponent: React.FC = () => {
           setError("Failed to load guests. Please try again.");
         });
     }
+    setWaiting(false);
   }, [code]);
 
   return (
@@ -47,6 +50,10 @@ const RsvpComponent: React.FC = () => {
           {error ? (
             <p className="text-red-500 text-md md:text-text-lg p-4">
               Error: {error}
+            </p>
+          ) : waiting ? (
+            <p className="text-brown-dark text-md md:text-text-lg  p-4">
+              Loading...
             </p>
           ) : guests.length === 0 ? (
             <p className="text-red-500 text-md md:text-text-lg p-4">
