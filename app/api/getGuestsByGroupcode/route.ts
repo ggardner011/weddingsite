@@ -1,28 +1,29 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextResponse } from "next/server";
+import { prisma } from "@/lib/prisma";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  if (req.method !== "GET") {
-    return res.status(405).json({ error: `Method ${req.method} not allowed` });
-  }
-
-  const { groupcode } = req.query; // Extract groupcode from query params
-
-  if (!groupcode || typeof groupcode !== "string") {
-    return res
-      .status(400)
-      .json({ error: "groupcode is required and must be a string" });
-  }
-
+// ✅ Arrow function that correctly parses JSON body
+export const POST = async (req: Request) => {
   try {
-    const users = await prisma.user.findMany({
+    const body = await req.json(); // ✅ Parse request body
+    const { groupcode } = body; // ✅ Extract 'groupcode' from body
+
+    if (!groupcode) {
+      return NextResponse.json(
+        { error: "groupcode is required" },
+        { status: 400 }
+      );
+    }
+
+    const guests = await prisma.guests.findMany({
       where: { groupcode },
     });
 
-    return res.status(200).json(users);
+    return NextResponse.json(guests, { status: 200 });
   } catch (error) {
-    return res.status(500).json({ error: "Something went wrong" });
+    console.error("Error fetching guests:", error);
+    return NextResponse.json(
+      { error: "Something went wrong" },
+      { status: 500 }
+    );
   }
-}
+};

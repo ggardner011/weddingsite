@@ -1,10 +1,11 @@
-import { useSearchParams } from "next/navigation";
+import { Guests } from "@prisma/client";
 
 interface RsvpFormProps {
-  code: string;
+  guests: Guests[];
 }
 
-const RsvpForm: React.FC<RsvpFormProps> = ({ code }) => {
+const RsvpForm: React.FC<RsvpFormProps> = ({ guests }) => {
+  console.log(guests);
   return <></>;
 };
 
