@@ -62,22 +62,6 @@ const RsvpCard: React.FC<RsvpCardProps> = React.memo(function RsvpCard({
         </select>
       </div>
 
-      {/* Email Input */}
-      <div className="flex flex-col space-y-2">
-        <label htmlFor={`email-${guestState.id}`} className="text-lg">
-          Email (optional)
-        </label>
-        <input
-          type="email"
-          id={`email-${guestState.id}`}
-          name="email"
-          value={guestState.email || ""}
-          onChange={(e) => setGuestState({ ...guest, email: e.target.value })}
-          className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown-light px-4 py-2 rounded focus:outline-none w-full md:w-128"
-          placeholder="Enter your email"
-        />
-      </div>
-
       {/* Meal Selection */}
       <div className="flex flex-col space-y-2">
         <label htmlFor={`meal-${guestState.id}`} className="text-lg">
@@ -98,6 +82,22 @@ const RsvpCard: React.FC<RsvpCardProps> = React.memo(function RsvpCard({
             </option>
           ))}
         </select>
+      </div>
+
+      {/* Email Input */}
+      <div className="flex flex-col space-y-2">
+        <label htmlFor={`email-${guestState.id}`} className="text-lg">
+          Email (optional)
+        </label>
+        <input
+          type="email"
+          id={`email-${guestState.id}`}
+          name="email"
+          value={guestState.email || ""}
+          onChange={(e) => setGuestState({ ...guest, email: e.target.value })}
+          className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown-light px-4 py-2 rounded focus:outline-none w-full md:w-128"
+          placeholder="Enter your email"
+        />
       </div>
     </div>
   );
