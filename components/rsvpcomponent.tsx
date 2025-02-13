@@ -51,7 +51,7 @@ const RsvpComponent: React.FC = () => {
   }, [toggle, code]);
 
   return (
-    <div>
+    <div className="pb-8">
       <SearchBar intialCode={code} handleToggle={handleToggle} />
       {!code ? (
         <p className="text-brown-dark text-md md:text-text-lg  p-4">
