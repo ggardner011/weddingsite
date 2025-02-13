@@ -11,7 +11,7 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
   title: "Our Wedding",
-  description: "Our wedding website",
+  description: "Graeson and Elenas wedding website",
 };
 
 export default function RootLayout({
