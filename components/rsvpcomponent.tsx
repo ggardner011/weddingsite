@@ -1,6 +1,6 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import RsvpForm from "@/components/rsvpform";
+import RsvpMultiForm from "@/components/rsvpmultiform";
 import SearchBar from "@/components/search";
 import { useEffect, useState } from "react";
 import { Guests } from "@prisma/client";
@@ -12,6 +12,7 @@ const RsvpComponent: React.FC = () => {
   const [guests, setGuests] = useState<Guests[] | null>(null);
   const [error, setError] = useState("");
 
+  //Search for guests by groupcode when code changes
   useEffect(() => {
     setError("");
     setGuests(null);
@@ -34,10 +35,6 @@ const RsvpComponent: React.FC = () => {
 
   return (
     <div>
-      <h1 className="text-green-dark text-2xl md:text-4xl  font-bold p-4">
-        RSVP Here!
-      </h1>
-
       <SearchBar intialCode={code} />
       {code === "" ? (
         <p className="text-brown-dark text-md md:text-text-lg  p-4">
@@ -56,12 +53,7 @@ const RsvpComponent: React.FC = () => {
             </p>
           ) : guests !== null ? (
             <>
-              <RsvpForm guests={guests} />
-              <p className="text-brown-dark text-md md:text-text-lg  p-4">
-                {" "}
-                Code found for{" "}
-                {guests.map((guest) => guest.firstname).join(", ")}{" "}
-              </p>
+              <RsvpMultiForm guests={guests} />
             </>
           ) : (
             <p className="text-brown-dark text-md md:text-text-lg  p-4">

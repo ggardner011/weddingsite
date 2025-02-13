@@ -21,7 +21,7 @@ const SearchBar: React.FC<SearchProps> = ({ intialCode }) => {
         value={code}
         onChange={(e) => setCode(e.target.value.toLowerCase())}
         placeholder="Enter Code..."
-        className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown px-4 py-2 rounded focus:outline-none w-64"
+        className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown-light px-4 py-2 rounded focus:outline-none w-64"
       />
       <button
         onClick={handleSearch}
