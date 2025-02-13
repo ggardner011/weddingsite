@@ -22,12 +22,12 @@ const RsvpCard: React.FC<RsvpCardProps> = React.memo(
       if (!foodOptions.includes(guestState.foodpreference || "")) {
         setGuestState((prev) => ({ ...prev, foodpreference: foodOptions[0] }));
       }
-    }, []);
+    });
 
     // When guestState changes, notify the parent
     useEffect(() => {
       onGuestUpdate(guestState);
-    }, [guestState]);
+    }, [guestState, onGuestUpdate]);
 
     return (
       <div
