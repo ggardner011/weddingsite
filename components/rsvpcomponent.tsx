@@ -1,7 +1,7 @@
 "use client";
 import { useSearchParams } from "next/navigation";
 import RsvpMultiForm from "@/components/rsvpmultiform";
-import SearchBar from "@/components/search";
+import SearchBar from "@/components/searchbar";
 import { useEffect, useState } from "react";
 import { Guests } from "@prisma/client";
 
