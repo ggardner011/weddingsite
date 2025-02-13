@@ -55,7 +55,7 @@ const RsvpMultiForm: React.FC<{ guests: Guests[] }> = ({ guests }) => {
           }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {guests.map((guest) => (
+            {guestResponses.map((guest) => (
               <RsvpCard
                 key={guest.id}
                 guest={guest}

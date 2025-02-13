@@ -3,15 +3,20 @@ import { useRouter, usePathname } from "next/navigation";
 
 interface SearchProps {
   intialCode: string;
+  handleToggle: () => void;
 }
 
-const SearchBar: React.FC<SearchProps> = ({ intialCode }) => {
+const SearchBar: React.FC<SearchProps> = ({ intialCode, handleToggle }) => {
   const [code, setCode] = useState<string>(intialCode) || "";
   const router = useRouter();
   const currentPath = usePathname();
 
   const handleSearch = () => {
     router.push(`${currentPath}?code=${code}`);
+    //if code is the same then toggle as we want to force the use effect to trigger, but only once
+    if (code === intialCode) {
+      handleToggle();
+    }
   };
 
   return (

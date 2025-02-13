@@ -11,6 +11,11 @@ const RsvpComponent: React.FC = () => {
 
   const [guests, setGuests] = useState<Guests[] | null>(null);
   const [error, setError] = useState("");
+  const [toggle, setToggle] = useState(false); //toggle for triggering state update on button click, only changes when the search button is clicked but there is no code change to force a refresh
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
 
   //Search for guests by groupcode when code changes
   useEffect(() => {
@@ -43,11 +48,11 @@ const RsvpComponent: React.FC = () => {
     };
 
     fetchGuests();
-  }, [code]);
+  }, [toggle, code]);
 
   return (
     <div>
-      <SearchBar intialCode={code} />
+      <SearchBar intialCode={code} handleToggle={handleToggle} />
       {!code ? (
         <p className="text-brown-dark text-md md:text-text-lg  p-4">
           Please enter your invitation code to RSVP. The code will come printed
