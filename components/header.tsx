@@ -17,7 +17,7 @@ const Header: React.FC = () => {
             <li>
               <Link
                 href="/"
-                className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown px-4 py-2 rounded"
+                className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown px-6 py-2 rounded-lg hover:bg-yellow-dark hover:text-brown-dark transition"
               >
                 Home
               </Link>
@@ -25,7 +25,7 @@ const Header: React.FC = () => {
             <li>
               <Link
                 href="/about"
-                className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown px-4 py-2 rounded"
+                className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown px-6 py-2 rounded-lg hover:bg-yellow-dark hover:text-brown-dark transition"
               >
                 About
               </Link>
@@ -33,7 +33,7 @@ const Header: React.FC = () => {
             <li>
               <Link
                 href="/qa"
-                className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown px-4 py-2 rounded"
+                className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown px-6 py-2 rounded-lg hover:bg-yellow-dark hover:text-brown-dark transition"
               >
                 Q&A
               </Link>
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
             <li>
               <Link
                 href="/rsvp"
-                className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown px-4 py-2 rounded"
+                className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown px-6 py-2 rounded-lg hover:bg-yellow-dark hover:text-brown-dark transition"
               >
                 RSVP
               </Link>

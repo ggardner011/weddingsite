@@ -14,29 +14,41 @@ const RsvpComponent: React.FC = () => {
 
   //Search for guests by groupcode when code changes
   useEffect(() => {
-    setError("");
-    setGuests(null);
-    if (code) {
-      fetch("/api/getGuestsByGroupcode", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ groupcode: code }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          setGuests(data); // Store API response in state
-        })
-        .catch((err) => {
-          console.error("Error fetching guests:", err);
-          setError("Failed to load guests. Please try again.");
+    const fetchGuests = async () => {
+      try {
+        setError("");
+        setGuests(null);
+
+        if (!code || code === "") return;
+
+        const response = await fetch("/api/getGuestsByGroupcode", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ groupcode: code }),
         });
-    }
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(errorData.error || "Failed to fetch guests");
+        }
+
+        const data = await response.json();
+        setGuests(data);
+      } catch (err) {
+        console.error("Error fetching guests:", err);
+        setError(
+          (err as Error).message || "Failed to load guests. Please try again."
+        );
+      }
+    };
+
+    fetchGuests();
   }, [code]);
 
   return (
     <div>
       <SearchBar intialCode={code} />
-      {code === "" ? (
+      {!code ? (
         <p className="text-brown-dark text-md md:text-text-lg  p-4">
           Please enter your invitation code to RSVP. The code will come printed
           on your invitation.
@@ -46,7 +58,7 @@ const RsvpComponent: React.FC = () => {
           {error ? (
             <p className="text-red-500 text-md md:text-text-lg  p-4">
               Error: {error}
-            </p> // ✅ Only show error after loading completes
+            </p>
           ) : guests !== null && guests.length === 0 ? (
             <p className="text-red-500 text-md md:text-text-lg  p-4">
               Invitation code not found.

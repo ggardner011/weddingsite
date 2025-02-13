@@ -25,7 +25,7 @@ const SearchBar: React.FC<SearchProps> = ({ intialCode }) => {
       />
       <button
         onClick={handleSearch}
-        className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown px-4 py-2 rounded"
+        className="text-yellow-dark font-bold border-2 border-brown-dark bg-brown px-6 py-2 rounded-lg hover:bg-yellow-dark hover:text-brown-dark transition"
       >
         Enter
       </button>
