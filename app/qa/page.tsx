@@ -5,7 +5,7 @@ const QA: React.FC = () => {
         QA
       </h1>
       <p className="text-brown-dark text-md md:text-text-lg  p-4">
-        Got questions? We'll have answers at some point.
+        Got questions? We&apos;ll have answers at some point.
       </p>
     </div>
   );
