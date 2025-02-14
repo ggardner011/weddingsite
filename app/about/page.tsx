@@ -6,7 +6,7 @@ const About: React.FC = () => {
       </h1>
       <p className="text-brown-dark text-md md:text-text-lg  p-4">
         Its us Graeson and Elena -- you know us, and if you don't you probably
-        shouldn't be here.
+        shouldn't be here!
       </p>
     </div>
   );
