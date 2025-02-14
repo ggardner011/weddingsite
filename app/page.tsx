@@ -6,7 +6,7 @@ const Home: React.FC = () => {
       </h1>
       <p className="text-brown-dark text-md md:text-text-lg  p-4">
         Please join us on April 15th 2026 to celebrate our wedding. The event
-        will be hostes at the Rush Creek Lodge near the west entrance of
+        will be hosted at the Rush Creek Lodge near the west entrance of
         Yosemite National Park. We recommend guests arrive on Friday, April 24th
         and plan to stay until Sunday, April 26th. BYOB.{" "}
       </p>
