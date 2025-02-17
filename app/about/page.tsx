@@ -5,7 +5,7 @@ const About: React.FC = () => {
         About!
       </h1>
       <p className="text-brown-dark text-md md:text-text-lg  p-4">
-        Its us Graeson and Elena -- you know us, and if you don&apos;t you
+        It&apos;s us Graeson and Elena -- you know us, and if you don&apos;t you
         probably shouldn&apos;t be here!
       </p>
     </div>

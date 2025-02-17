@@ -56,7 +56,9 @@ const RsvpComponent: React.FC = () => {
       {!code ? (
         <p className="text-brown-dark text-md md:text-text-lg  p-4">
           Please enter your invitation code to RSVP. The code will come printed
-          on your invitation.
+          on your invitation. UPDATE: Printing the codes on the invitations is
+          too expensive. You will receive your code on a seperate slip which
+          comes with the invitation.
         </p>
       ) : (
         <>
