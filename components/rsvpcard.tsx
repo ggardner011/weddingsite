@@ -36,7 +36,7 @@ const RsvpCard: React.FC<RsvpCardProps> = React.memo(function RsvpCard({
       key={guestState.id}
       className="border-2 border-brown-dark bg-brown text-yellow-dark font-bold rounded-lg p-6 space-y-4"
     >
-      <h2 className="text-xl text-center">
+      <h2 className="text-yellow-dark text-xl text-center">
         {guestState.firstname} {guestState.lastname}
       </h2>
 
