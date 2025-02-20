@@ -54,7 +54,7 @@ const RsvpComponent: React.FC = () => {
     <div className="pb-8">
       <SearchBar intialCode={code} handleToggle={handleToggle} />
       {!code ? (
-        <p className="text-brown-dark text-md md:text-text-lg  p-4">
+        <p>
           Please enter your invitation code to RSVP. The code will come printed
           on your invitation. UPDATE: Printing the codes on the invitations is
           too expensive. You will receive your code on a seperate slip which
@@ -75,9 +75,7 @@ const RsvpComponent: React.FC = () => {
               <RsvpMultiForm guests={guests} />
             </>
           ) : (
-            <p className="text-brown-dark text-md md:text-text-lg  p-4">
-              Loading...
-            </p>
+            <p>Loading...</p>
           )}
         </>
       )}
