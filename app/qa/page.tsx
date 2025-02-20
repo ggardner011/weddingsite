@@ -44,7 +44,7 @@ const QA: React.FC = () => {
 
           <div>
             <a
-              href="www.evergreenlodge.com/"
+              href="https://www.evergreenlodge.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -62,7 +62,7 @@ const QA: React.FC = () => {
 
           <div>
             <a
-              href="www.theserenite.com/the-groveland-hotel"
+              href="https://www.theserenite.com/the-groveland-hotel"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -79,7 +79,7 @@ const QA: React.FC = () => {
 
           <div>
             <a
-              href="www.travelyosemite.com/lodging/curry-village/"
+              href="https://www.travelyosemite.com/lodging/curry-village/"
               target="_blank"
               rel="noopener noreferrer"
             >
