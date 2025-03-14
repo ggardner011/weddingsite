@@ -98,7 +98,7 @@ const QA: React.FC = () => {
           </div>
 
           <p>
-            Please don&apos;st be confined to these lodging options! Late April
+            Please don&apos;t be confined to these lodging options! Late April
             in Yosemite can still be quite cold for camping, so plan
             accordingly.
           </p>
