@@ -55,10 +55,8 @@ const RsvpComponent: React.FC = () => {
       <SearchBar intialCode={code} handleToggle={handleToggle} />
       {!code ? (
         <p>
-          Please enter your invitation code to RSVP. The code will come printed
-          on your invitation. UPDATE: Printing the codes on the invitations is
-          too expensive. You will receive your code on a seperate slip which
-          comes with the invitation.
+          Please enter your invitation code to RSVP. The code will come with
+          your invitation.
         </p>
       ) : (
         <>

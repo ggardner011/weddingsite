@@ -137,7 +137,6 @@ const QA: React.FC = () => {
                 this link
               </a>
             </strong>
-            .
           </p>
 
           <p>
@@ -163,11 +162,11 @@ const QA: React.FC = () => {
         <section>
           <h2>What time do all of the events begin and end?</h2>
           <p>
-            Our ceremony begins on <b>April 25, 2026, at 3:30 PM</b> at the{" "}
-            <b>Cedar View Ceremony Site</b>. The reception starts at{" "}
+            Our ceremony begins on <b>April 25, 2026, at 3:30 PM</b> at the
+            <b>Cedar View Ceremony Site</b>. The reception starts at
             <b>4:00 PM</b> at the Event Center near the Rush Creek Tavern and
-            ends at <b>10:00 PM</b>. We will also host a{" "}
-            <b>farewell breakfast</b> at the Tavern on{" "}
+            ends at <b>10:00 PM</b>. We will also host a
+            <b>farewell breakfast</b> at the Tavern on
             <b>April 26, 2026, from 8:30 AM - 10:30 AM</b>.
           </p>
         </section>
@@ -181,6 +180,134 @@ const QA: React.FC = () => {
             Graeson.
           </p>
         </section>
+        {/* Dress Code */}
+        <section>
+          <h2>Dress Code?</h2>
+          <p>
+            Semi-formal attire, please! Our color palette consists of blues,
+            greens, and browns (think of colors you’d see in the forest!), if
+            you’d like to match.
+          </p>
+        </section>
+
+        {/* Allergies*/}
+        <section>
+          <h2>
+            Who can I speak to about food allergies/other diet restrictions?
+          </h2>
+          <p>
+            Elena or Graeson! Please inform us of any allergies/dietary
+            restrictions by <b>January 1, 2026.</b>
+          </p>
+        </section>
+
+        {/* Gifts*/}
+        <section>
+          <h2>What is your gift policy?</h2>
+          <p>
+            Gifts are welcome but not required! If you would like, we prefer
+            donations toward our honeymoon fund. These donations may be made in
+            person or via the linked Venmo account: link. Alternatively, you may
+            make a donation in our names to one or multiple of the following
+            National Park funds:
+          </p>
+          <ul>
+            <li>
+              {" "}
+              <a
+                className="underline text-green bold"
+                href="https:\\www.nationalparks.org/donate"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Park Foundation
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a
+                className="underline text-green bold"
+                href="https://support.npca.org/page/80849/donate/1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Parks Conservation Association
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a
+                className="underline text-green bold"
+                href="https://yosemite.org/donate/join-us/?appeal=odev&package=web"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Yosemite Conservatory
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a
+                className="underline text-green bold"
+                href="https://www.friendsofyosar.org/donate"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Friends of Yosemite Search & Rescue
+              </a>
+            </li>
+          </ul>
+          <p>
+            We currently have the privilege of celebrating in this beautiful
+            park, and we want to protect this land for generations to come.
+            Thank you in advance!
+          </p>
+        </section>
+
+        {/* Other stuff */}
+        <section>
+          <h2>
+            I can’t believe your wedding is in Yosemite! What else should I do
+            while in the area?
+          </h2>
+          <p>
+            We can’t believe it either! There are a wealth of outdoor activities
+            in and around Yosemite Valley, all detailed{" "}
+            <a
+              className="underline text-green bold"
+              href="https://www.nps.gov/yose/planyourvisit/placestogo.htm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              here
+            </a>
+          </p>
+          <p>
+            Rush Creek Lodge also hosts excursions that you are welcome to take
+            advantage of during your stay;{" "}
+            <a
+              className="underline text-green bold"
+              href="https://www.rushcreeklodge.com/explore/guidedexcursions/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              see more details here
+            </a>
+            .
+          </p>
+          <p>
+            Please keep weather in mind when planning your adventures. One of
+            Yosemite's main roads, Tioga Pass, is closed from November-May. This
+            may lead to increases in travel time.
+          </p>
+          <p>
+            Rush Creek Lodge also hosts excursions that you are welcome to take
+            advantage of during your stay: We are looking forward to seeing
+            everyone on our special day!
+          </p>
+        </section>
+
+        <p> </p>
       </div>
     </div>
   );

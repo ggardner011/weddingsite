@@ -1,3 +1,5 @@
+import PictureCard from "@/components/picturecard";
+
 const About: React.FC = () => {
   return (
     <div>
@@ -27,6 +29,28 @@ const About: React.FC = () => {
         begin, and are so excited to celebrate their love with family and
         friends in a beautiful place!
       </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
+        <PictureCard
+          src="/images/gallery/caadventure.jpeg"
+          alt=""
+          caption="Disneyland"
+        />
+        <PictureCard
+          src="/images/gallery/falls.jpeg"
+          alt=""
+          caption="Vernal Falls"
+        />
+        <PictureCard
+          src="/images/gallery/glacier.jpeg"
+          alt=""
+          caption="Glacier National Park"
+        />
+        <PictureCard
+          src="/images/gallery/christmas.jpeg"
+          alt=""
+          caption="Academy of Sciences"
+        />
+      </div>
     </div>
   );
 };
