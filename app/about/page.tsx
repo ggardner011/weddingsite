@@ -13,7 +13,7 @@ const About: React.FC = () => {
         October 2018 after Elena was shocked to find someone with the same name
         and spelling as one of her best friends and roommate. This unique
         coincidence sparked an immediate flame, and they were quick to kindle a
-        relationship. Graeson stole Elenan&apos;s heart after he unexpectedly
+        relationship. Graeson stole Elena&apos;s heart after he unexpectedly
         dressed up as Ben Wyatt for their first Halloween together, and Elena
         was supposed to dress up as Leslie Knope but decide to be Blossom from
         the Powerpuff Girls instead. Through brief residences in Portland and

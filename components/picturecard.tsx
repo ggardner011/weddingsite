@@ -32,6 +32,7 @@ const PictureCard: React.FC<PictureCardProps> = ({ src, alt, caption }) => {
             closeOnBackdropClick: true, // Tap/click anywhere outside image to close
             closeOnPullDown: true, // (Mobile) pull down to close
           }}
+          //Hide navigation buttons
           render={{
             buttonPrev: () => null,
             buttonNext: () => null,
