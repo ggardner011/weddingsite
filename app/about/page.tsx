@@ -29,6 +29,7 @@ const About: React.FC = () => {
         begin, and are so excited to celebrate their love with family and
         friends in a beautiful place!
       </p>
+      <h1>Our Favorite Places</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
         <PictureCard
           src="/images/gallery/caadventure.jpeg"
