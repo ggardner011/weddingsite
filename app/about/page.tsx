@@ -3,7 +3,7 @@ import PictureCard from "@/components/picturecard";
 const About: React.FC = () => {
   return (
     <div>
-      <h1>About!</h1>
+      <h1>About</h1>
       <p>
         It&apos;s us Graeson and Elena -- you know us, and if you don&apos;t you
         probably shouldn&apos;t be here!

@@ -28,6 +28,14 @@ const PictureCard: React.FC<PictureCardProps> = ({ src, alt, caption }) => {
           open={isOpen}
           close={() => setIsOpen(false)}
           slides={[{ src }]}
+          controller={{
+            closeOnBackdropClick: true, // Tap/click anywhere outside image to close
+            closeOnPullDown: true, // (Mobile) pull down to close
+          }}
+          render={{
+            buttonPrev: () => null,
+            buttonNext: () => null,
+          }}
         />
       )}
     </div>
