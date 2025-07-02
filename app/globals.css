@@ -31,12 +31,14 @@ body {
   }
 
   h2 {
-    @apply text-green text-xl md:text-2xl font-bold p-4;
+    @apply text-green-dark text-xl md:text-2xl font-bold p-4;
   }
   h3 {
     @apply text-brown text-lg md:text-xl font-bold p-4;
   }
-
+  a {
+    @apply text-green text-lg md:text-xl font-bold;
+  }
   p {
     @apply text-brown-dark text-base md:text-lg p-4;
   }

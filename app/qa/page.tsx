@@ -23,7 +23,7 @@ const QA: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3 className="underline">Rush Creek Lodge & Spa</h3>
+              <h3 className="underline text-green">Rush Creek Lodge & Spa</h3>
             </a>
             <div className="pl-4">
               <p className="pt-0">
@@ -48,7 +48,9 @@ const QA: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3 className="underline">Evergreen Lodge at Yosemite</h3>
+              <h3 className="underline text-green">
+                Evergreen Lodge at Yosemite
+              </h3>
             </a>
             <div className="pl-4">
               <p className="pt-0">
@@ -66,7 +68,7 @@ const QA: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3 className=" underline">The Groveland Hotel</h3>
+              <h3 className=" underline text-green">The Groveland Hotel</h3>
             </a>
             <div className="pl-4">
               <p className="pt-0">
@@ -83,7 +85,7 @@ const QA: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3 className=" underline">Curry Village</h3>
+              <h3 className=" underline text-green">Curry Village</h3>
             </a>
             <div className="pl-4">
               <p className="pt-0">
@@ -127,7 +129,7 @@ const QA: React.FC = () => {
             For more directions, visit{" "}
             <strong>
               <a
-                className="underline bold"
+                className="underline text-green bold"
                 href="https://www.rushcreeklodge.com/plan/directions-and-transportation/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -140,20 +142,20 @@ const QA: React.FC = () => {
 
           <p>
             <strong>For our out-of-state guests:</strong> We recommend flying
-            into any of the major Northern California airports (**SFO, OAK, SJC,
-            SAC**) and renting a car. You may also fly into Mammoth Yosemite
-            Airport (**MMH**), Merced Regional Airport (**MCE**), or
-            Fresno-Yosemite International Airport (**FAT**), but these smaller
-            airports have fewer flights.
+            into any of the major Northern California airports{" "}
+            <b>(SFO, OAK, SJC, SAC)</b> and renting a car. You may also fly into
+            Mammoth Yosemite Airport <b>(MMH)</b>, Merced Regional Airport
+            (**MCE**), or Fresno-Yosemite International Airport <b>(FAT)</b>,
+            but these smaller airports have fewer flights.
           </p>
 
           <p>
-            <strong>Driving warning:</strong> There is a stretch of **Hwy 120
-            into Groveland** called **Priest Grade**, which has several
-            switchbacks and limited nighttime visibility. While both **New
-            Priest Grade and Old Priest Grade** are relatively short, they can
-            be dangerous for unfamiliar drivers. Please keep this in mind for
-            travel and lodging plans.
+            <strong>Driving warning:</strong> There is a stretch of Hwy 120 into
+            Groveland called Priest Grade, which has several switchbacks and
+            limited nighttime visibility. While both New Priest Grade and Old
+            Priest Grade are relatively short, they can be dangerous for
+            unfamiliar drivers. Please keep this in mind for travel and lodging
+            plans.
           </p>
         </section>
 
@@ -161,11 +163,12 @@ const QA: React.FC = () => {
         <section>
           <h2>What time do all of the events begin and end?</h2>
           <p>
-            Our ceremony begins on **April 25, 2026, at 3:30 PM** at the **Cedar
-            View Ceremony Site**. The reception starts at **4:00 PM** at the
-            Event Center near the Rush Creek Tavern and ends at **10:00 PM**. We
-            will also host a **farewell breakfast** at the Tavern on **April 26,
-            2026, from 8:30 AM - 10:30 AM**.
+            Our ceremony begins on <b>April 25, 2026, at 3:30 PM</b> at the{" "}
+            <b>Cedar View Ceremony Site</b>. The reception starts at{" "}
+            <b>4:00 PM</b> at the Event Center near the Rush Creek Tavern and
+            ends at <b>10:00 PM</b>. We will also host a{" "}
+            <b>farewell breakfast</b> at the Tavern on{" "}
+            <b>April 26, 2026, from 8:30 AM - 10:30 AM</b>.
           </p>
         </section>
 
