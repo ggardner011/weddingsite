@@ -297,8 +297,8 @@ const QA: React.FC = () => {
           </p>
           <p>
             Please keep weather in mind when planning your adventures. One of
-            Yosemite's main roads, Tioga Pass, is closed from November-May. This
-            may lead to increases in travel time.
+            Yosemite&apos;s main roads, Tioga Pass, is closed from November-May.
+            This may lead to increases in travel time.
           </p>
           <p>
             Rush Creek Lodge also hosts excursions that you are welcome to take
