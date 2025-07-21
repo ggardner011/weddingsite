@@ -44,10 +44,10 @@ body {
   }
 
   li {
-    @apply text-brown-dark text-base md:text-lg list-disc p-1;
+    @apply text-brown-dark text-base md:text-lg  p-1;
   }
 
   ul {
-    @apply text-brown-dark text-base md:text-lg list-disc  mx-10;
+    @apply text-brown-dark text-base md:text-lg  mx-10;
   }
 }

@@ -6,7 +6,7 @@ const Home: React.FC = () => {
         Please join us on April 25th 2026 to celebrate our wedding. The event
         will be hosted at the Rush Creek Lodge near the west entrance of
         Yosemite National Park. We recommend guests arrive on Friday, April 24th
-        and plan to stay until Sunday, April 26th. BYOB.
+        and plan to stay until Sunday, April 26th.
       </p>
     </div>
   );
