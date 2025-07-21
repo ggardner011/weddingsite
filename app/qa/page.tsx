@@ -30,7 +30,7 @@ const QA: React.FC = () => {
                 Come stay where the magic happens! We have a room block at this
                 hotel, but you must book by <strong>December 20, 2025</strong>.
                 Guests may book online or call{" "}
-                <a href="tel:+12093792373"> (209) 379-2373</a> and provide the
+                <a href="tel:+12093792373">(209) 379-2373</a> and provide the
                 group code, <strong>GARDNER</strong>. There is a{" "}
                 <strong>two-night minimum stay</strong>, so we recommend booking
                 from <strong>April 24-26, 2026</strong>.
@@ -162,11 +162,11 @@ const QA: React.FC = () => {
         <section>
           <h2>What time do all of the events begin and end?</h2>
           <p>
-            Our ceremony begins on <b>April 25, 2026, at 3:30 PM</b> at the
-            <b>Cedar View Ceremony Site</b>. The reception starts at
+            Our ceremony begins on <b>April 25, 2026, at 3:30 PM</b> at the{" "}
+            <b>Cedar View Ceremony Site</b>. The reception starts at{" "}
             <b>4:00 PM</b> at the Event Center near the Rush Creek Tavern and
-            ends at <b>10:00 PM</b>. We will also host a
-            <b>farewell breakfast</b> at the Tavern on
+            ends at <b>10:00 PM</b>. We will also host a{" "}
+            <b>farewell breakfast</b> at the Tavern on{" "}
             <b>April 26, 2026, from 8:30 AM - 10:30 AM</b>.
           </p>
         </section>
