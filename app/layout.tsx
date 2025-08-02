@@ -3,13 +3,13 @@ import { Raleway, Playfair_Display } from "next/font/google";
 import Header from "@/components/header";
 import "./globals.css";
 
-const raleway = Raleway({
+export const raleway = Raleway({
   subsets: ["latin"],
   weight: ["400", "700"],
   display: "swap",
 });
 
-const playfair = Playfair_Display({
+export const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "700"],
   display: "swap",
