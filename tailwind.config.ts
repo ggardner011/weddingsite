@@ -10,6 +10,7 @@ export default {
     extend: {
       fontFamily: {
         deco: ["Raleway", "sans-serif"],
+        playfair: ["Playfair_Display", "serif"],
       },
       colors: {
         background: "var(--background)",

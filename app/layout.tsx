@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import { Raleway, Playfair_Display } from "next/font/google";
 import Header from "@/components/header";
 import "./globals.css";
 
 const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "700"],
   display: "swap",
@@ -21,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${raleway.className}  antialiased`}>
+      <body className={`antialiased`}>
         <Header />
         <div className="bg-yellow-light min-h-screen">{children}</div>
       </body>

@@ -8,7 +8,7 @@ const Header: React.FC = () => {
       style={{ backgroundImage: "url('/images/background.png')" }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="relative z-10 flex flex-col items-center justify-center h-full  font-deco">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full ">
         <h1 className="text-3xl md:text-4xl text-center font-extrabold  text-outline-green-header">
           Graeson and Elena&apos;s Wedding!
         </h1>

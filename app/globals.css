@@ -14,18 +14,15 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .text-outline-green-header {
   -webkit-text-stroke: 1px #434a50; /* Stroke width and color */
   color: #cfd6b8; /* Fill the text with transparency */
 }
 
 @layer base {
+  body {
+    @apply font-deco bg-background text-foreground;
+  }
   h1 {
     @apply text-green-dark text-2xl md:text-4xl font-bold p-4;
   }
@@ -37,7 +34,7 @@ body {
     @apply text-brown text-lg md:text-xl font-bold p-2 mx-2;
   }
   a {
-    @apply text-green  font-bold;
+    @apply text-green font-bold;
   }
   p {
     @apply text-brown-dark text-base md:text-lg p-2 mx-2;
