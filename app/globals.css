@@ -47,4 +47,8 @@
   ul {
     @apply text-brown-dark text-base md:text-lg  mx-10;
   }
+
+  .custom-class {
+    @apply bg-green text-white font-bold py-2 px-4 rounded hover:bg-green-dark transition-colors duration-300;
+  }
 }
