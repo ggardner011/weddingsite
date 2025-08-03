@@ -7,12 +7,14 @@ const raleway = Raleway({
   subsets: ["latin"],
   weight: ["400", "700"],
   display: "swap",
+  variable: "--font-raleway", // 👈 required for .variable to exist
 });
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "700"],
   display: "swap",
+  variable: "--font-playfair", // 👈 required for .variable to exist
 });
 
 export const metadata: Metadata = {

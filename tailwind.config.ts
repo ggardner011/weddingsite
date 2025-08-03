@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        deco: ["Raleway", "sans-serif"],
-        playfair: ["Playfair_Display", "serif"],
+        deco: ["var(--font-raleway)", "sans-serif"],
+        playfair: ["var(--font-playfair)", "serif"],
       },
       colors: {
         background: "var(--background)",
