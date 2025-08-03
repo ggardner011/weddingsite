@@ -3,13 +3,13 @@ import { Raleway, Playfair_Display } from "next/font/google";
 import Header from "@/components/header";
 import "./globals.css";
 
-export const raleway = Raleway({
+const raleway = Raleway({
   subsets: ["latin"],
   weight: ["400", "700"],
   display: "swap",
 });
 
-export const playfair = Playfair_Display({
+const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "700"],
   display: "swap",
@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>
+      <body className={`antialiased ${raleway.variable} ${playfair.variable}`}>
         <Header />
         <div className="bg-yellow-light min-h-screen">{children}</div>
       </body>
