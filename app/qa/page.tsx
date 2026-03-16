@@ -207,9 +207,17 @@ const QA: React.FC = () => {
           <p>
             Gifts are welcome but not required! If you would like, we prefer
             donations toward our honeymoon fund. These donations may be made in
-            person or via the linked Venmo account: link. Alternatively, you may
-            make a donation in our names to one or multiple of the following
-            National Park funds:
+            person or{" "}
+            <a
+              className="underline text-green bold"
+              href="https:\\venmo.com/elena-graeson"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              via the linked Venmo account
+            </a>
+            . Alternatively, you may make a donation in our names to one or
+            multiple of the following National Park funds:
           </p>
           <ul>
             <li>
